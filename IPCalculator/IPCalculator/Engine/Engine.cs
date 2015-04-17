@@ -1,35 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace IPCalculator.Engine
+﻿namespace IPCalculator.Engine
 {
-    public class Engine
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    public static class Engine
     {
-        private static Engine instance;
 
-        private Engine() { }
-
-        public static Engine Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new Engine();
-                }
-                return instance;
-            }
-        }
 
         // Sample calculator : http://www.subnet-calculator.com/subnet.php?net_class=B
 
         // Todo Implement
-        public static string ConvertIP(string IP)
+        public static string ConvertAddressToBinary(string address)
         {
-            throw new NotImplementedException();
+            var result = new StringBuilder();
+            var splitted_address = address.Split('.').ToArray();
+
+            for (int i = 0; i < splitted_address.Length; i++)
+            {
+                int currentOctet = int.Parse(splitted_address[i]);
+                splitted_address[i] = Convert.ToString(currentOctet, 2).PadLeft(8, '0');
+            }
+            result.Append(String.Join(".", splitted_address)); 
+
+            return result.ToString();
         }
 
         public static string HostAddressRange()
