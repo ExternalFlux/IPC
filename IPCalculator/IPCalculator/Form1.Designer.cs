@@ -34,23 +34,23 @@
             this.txt_subnet = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.label_class = new System.Windows.Forms.Label();
+            this.label_type = new System.Windows.Forms.Label();
+            this.label_network = new System.Windows.Forms.Label();
+            this.label_bitmask = new System.Windows.Forms.Label();
+            this.label_netmask = new System.Windows.Forms.Label();
+            this.label_wildcardmask = new System.Windows.Forms.Label();
+            this.label_hostrange = new System.Windows.Forms.Label();
+            this.label_broadcast = new System.Windows.Forms.Label();
+            this.label_totalAdresses = new System.Windows.Forms.Label();
+            this.label_short = new System.Windows.Forms.Label();
+            this.label_hexdecID1 = new System.Windows.Forms.Label();
+            this.label_integerID = new System.Windows.Forms.Label();
+            this.label_hexdecID2 = new System.Windows.Forms.Label();
+            this.label_arpaFormat = new System.Windows.Forms.Label();
+            this.label_binaryID = new System.Windows.Forms.Label();
+            this.label_mappedIPv4 = new System.Windows.Forms.Label();
+            this.label_6to4prefix = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_ip_submit
@@ -104,182 +104,182 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Mask";
             // 
-            // label3
+            // label_class
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 100);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "class";
+            this.label_class.AutoSize = true;
+            this.label_class.Location = new System.Drawing.Point(12, 100);
+            this.label_class.Name = "label_class";
+            this.label_class.Size = new System.Drawing.Size(31, 13);
+            this.label_class.TabIndex = 6;
+            this.label_class.Text = "class";
             // 
-            // label4
+            // label_type
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 125);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(27, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "type";
+            this.label_type.AutoSize = true;
+            this.label_type.Location = new System.Drawing.Point(12, 125);
+            this.label_type.Name = "label_type";
+            this.label_type.Size = new System.Drawing.Size(27, 13);
+            this.label_type.TabIndex = 7;
+            this.label_type.Text = "type";
             // 
-            // label5
+            // label_network
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 150);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "network";
+            this.label_network.AutoSize = true;
+            this.label_network.Location = new System.Drawing.Point(12, 150);
+            this.label_network.Name = "label_network";
+            this.label_network.Size = new System.Drawing.Size(45, 13);
+            this.label_network.TabIndex = 8;
+            this.label_network.Text = "network";
             // 
-            // label6
+            // label_bitmask
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 176);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "bitmask";
+            this.label_bitmask.AutoSize = true;
+            this.label_bitmask.Location = new System.Drawing.Point(12, 176);
+            this.label_bitmask.Name = "label_bitmask";
+            this.label_bitmask.Size = new System.Drawing.Size(43, 13);
+            this.label_bitmask.TabIndex = 9;
+            this.label_bitmask.Text = "bitmask";
             // 
-            // label7
+            // label_netmask
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 198);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 13);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "netmask";
+            this.label_netmask.AutoSize = true;
+            this.label_netmask.Location = new System.Drawing.Point(12, 198);
+            this.label_netmask.Name = "label_netmask";
+            this.label_netmask.Size = new System.Drawing.Size(47, 13);
+            this.label_netmask.TabIndex = 10;
+            this.label_netmask.Text = "netmask";
             // 
-            // label8
+            // label_wildcardmask
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 224);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 13);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "wildcardmask";
+            this.label_wildcardmask.AutoSize = true;
+            this.label_wildcardmask.Location = new System.Drawing.Point(12, 224);
+            this.label_wildcardmask.Name = "label_wildcardmask";
+            this.label_wildcardmask.Size = new System.Drawing.Size(71, 13);
+            this.label_wildcardmask.TabIndex = 11;
+            this.label_wildcardmask.Text = "wildcardmask";
             // 
-            // label9
+            // label_hostrange
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 254);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 13);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "host range";
+            this.label_hostrange.AutoSize = true;
+            this.label_hostrange.Location = new System.Drawing.Point(12, 254);
+            this.label_hostrange.Name = "label_hostrange";
+            this.label_hostrange.Size = new System.Drawing.Size(57, 13);
+            this.label_hostrange.TabIndex = 12;
+            this.label_hostrange.Text = "host range";
             // 
-            // label10
+            // label_broadcast
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 283);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(94, 13);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "broadcast address";
+            this.label_broadcast.AutoSize = true;
+            this.label_broadcast.Location = new System.Drawing.Point(12, 283);
+            this.label_broadcast.Name = "label_broadcast";
+            this.label_broadcast.Size = new System.Drawing.Size(94, 13);
+            this.label_broadcast.TabIndex = 13;
+            this.label_broadcast.Text = "broadcast address";
             // 
-            // label11
+            // label_totalAdresses
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(12, 314);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(91, 13);
-            this.label11.TabIndex = 14;
-            this.label11.Text = "total IP addresses";
+            this.label_totalAdresses.AutoSize = true;
+            this.label_totalAdresses.Location = new System.Drawing.Point(12, 314);
+            this.label_totalAdresses.Name = "label_totalAdresses";
+            this.label_totalAdresses.Size = new System.Drawing.Size(91, 13);
+            this.label_totalAdresses.TabIndex = 14;
+            this.label_totalAdresses.Text = "total IP addresses";
             // 
-            // label12
+            // label_short
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(342, 100);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(30, 13);
-            this.label12.TabIndex = 15;
-            this.label12.Text = "short";
+            this.label_short.AutoSize = true;
+            this.label_short.Location = new System.Drawing.Point(342, 100);
+            this.label_short.Name = "label_short";
+            this.label_short.Size = new System.Drawing.Size(30, 13);
+            this.label_short.TabIndex = 15;
+            this.label_short.Text = "short";
             // 
-            // label13
+            // label_hexdecID1
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(342, 150);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(62, 13);
-            this.label13.TabIndex = 16;
-            this.label13.Text = "hexdec ID I";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
+            this.label_hexdecID1.AutoSize = true;
+            this.label_hexdecID1.Location = new System.Drawing.Point(342, 150);
+            this.label_hexdecID1.Name = "label_hexdecID1";
+            this.label_hexdecID1.Size = new System.Drawing.Size(62, 13);
+            this.label_hexdecID1.TabIndex = 16;
+            this.label_hexdecID1.Text = "hexdec ID I";
+            this.label_hexdecID1.Click += new System.EventHandler(this.label13_Click);
             // 
-            // label14
+            // label_integerID
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(342, 125);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(53, 13);
-            this.label14.TabIndex = 17;
-            this.label14.Text = "integer ID";
+            this.label_integerID.AutoSize = true;
+            this.label_integerID.Location = new System.Drawing.Point(342, 125);
+            this.label_integerID.Name = "label_integerID";
+            this.label_integerID.Size = new System.Drawing.Size(53, 13);
+            this.label_integerID.TabIndex = 17;
+            this.label_integerID.Text = "integer ID";
             // 
-            // label15
+            // label_hexdecID2
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(342, 176);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(65, 13);
-            this.label15.TabIndex = 18;
-            this.label15.Text = "hexdec ID II";
+            this.label_hexdecID2.AutoSize = true;
+            this.label_hexdecID2.Location = new System.Drawing.Point(342, 176);
+            this.label_hexdecID2.Name = "label_hexdecID2";
+            this.label_hexdecID2.Size = new System.Drawing.Size(65, 13);
+            this.label_hexdecID2.TabIndex = 18;
+            this.label_hexdecID2.Text = "hexdec ID II";
             // 
-            // label16
+            // label_arpaFormat
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(342, 224);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(95, 13);
-            this.label16.TabIndex = 19;
-            this.label16.Text = "in-addr.arpa format";
+            this.label_arpaFormat.AutoSize = true;
+            this.label_arpaFormat.Location = new System.Drawing.Point(342, 224);
+            this.label_arpaFormat.Name = "label_arpaFormat";
+            this.label_arpaFormat.Size = new System.Drawing.Size(95, 13);
+            this.label_arpaFormat.TabIndex = 19;
+            this.label_arpaFormat.Text = "in-addr.arpa format";
             // 
-            // label17
+            // label_binaryID
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(342, 198);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(49, 13);
-            this.label17.TabIndex = 20;
-            this.label17.Text = "binary ID";
+            this.label_binaryID.AutoSize = true;
+            this.label_binaryID.Location = new System.Drawing.Point(342, 198);
+            this.label_binaryID.Name = "label_binaryID";
+            this.label_binaryID.Size = new System.Drawing.Size(49, 13);
+            this.label_binaryID.TabIndex = 20;
+            this.label_binaryID.Text = "binary ID";
             // 
-            // label18
+            // label_mappedIPv4
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(342, 254);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(110, 13);
-            this.label18.TabIndex = 21;
-            this.label18.Text = "mapped IPv4 address";
+            this.label_mappedIPv4.AutoSize = true;
+            this.label_mappedIPv4.Location = new System.Drawing.Point(342, 254);
+            this.label_mappedIPv4.Name = "label_mappedIPv4";
+            this.label_mappedIPv4.Size = new System.Drawing.Size(110, 13);
+            this.label_mappedIPv4.TabIndex = 21;
+            this.label_mappedIPv4.Text = "mapped IPv4 address";
             // 
-            // label19
+            // label_6to4prefix
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(342, 283);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(56, 13);
-            this.label19.TabIndex = 22;
-            this.label19.Text = "6to4 prefix";
+            this.label_6to4prefix.AutoSize = true;
+            this.label_6to4prefix.Location = new System.Drawing.Point(342, 283);
+            this.label_6to4prefix.Name = "label_6to4prefix";
+            this.label_6to4prefix.Size = new System.Drawing.Size(56, 13);
+            this.label_6to4prefix.TabIndex = 22;
+            this.label_6to4prefix.Text = "6to4 prefix";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(801, 422);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label_6to4prefix);
+            this.Controls.Add(this.label_mappedIPv4);
+            this.Controls.Add(this.label_binaryID);
+            this.Controls.Add(this.label_arpaFormat);
+            this.Controls.Add(this.label_hexdecID2);
+            this.Controls.Add(this.label_integerID);
+            this.Controls.Add(this.label_hexdecID1);
+            this.Controls.Add(this.label_short);
+            this.Controls.Add(this.label_totalAdresses);
+            this.Controls.Add(this.label_broadcast);
+            this.Controls.Add(this.label_hostrange);
+            this.Controls.Add(this.label_wildcardmask);
+            this.Controls.Add(this.label_netmask);
+            this.Controls.Add(this.label_bitmask);
+            this.Controls.Add(this.label_network);
+            this.Controls.Add(this.label_type);
+            this.Controls.Add(this.label_class);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_subnet);
@@ -301,23 +301,23 @@
         private System.Windows.Forms.TextBox txt_subnet;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label_class;
+        private System.Windows.Forms.Label label_type;
+        private System.Windows.Forms.Label label_network;
+        private System.Windows.Forms.Label label_bitmask;
+        private System.Windows.Forms.Label label_netmask;
+        private System.Windows.Forms.Label label_wildcardmask;
+        private System.Windows.Forms.Label label_hostrange;
+        private System.Windows.Forms.Label label_broadcast;
+        private System.Windows.Forms.Label label_totalAdresses;
+        private System.Windows.Forms.Label label_short;
+        private System.Windows.Forms.Label label_hexdecID1;
+        private System.Windows.Forms.Label label_integerID;
+        private System.Windows.Forms.Label label_hexdecID2;
+        private System.Windows.Forms.Label label_arpaFormat;
+        private System.Windows.Forms.Label label_binaryID;
+        private System.Windows.Forms.Label label_mappedIPv4;
+        private System.Windows.Forms.Label label_6to4prefix;
     }
 }
 
