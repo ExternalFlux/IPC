@@ -3,13 +3,12 @@ IP Calculator
 
 #Tasks:
 ##UI:
--mkd1994(Marto)
+-mkd1994,?????(Vik),?????(Kris)
 
 ##Engine:
--jumperabg(Krasi)
--Watasama(Georgi)
+-jumperabg
+,Watasama
 
 
 ##Validator:
--mkd1994(Marto)
--Watasama(Georgi)
+-mkd1994,Watasama,kiliev,????(Kris)
