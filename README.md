@@ -3,7 +3,7 @@ IP Calculator
 
 #Tasks:
 ##UI:
--mkd1994,?????(Vik)
+-mkd1994,?????(Vik),?????(Kris)
 
 ##Engine:
 -jumperabg
@@ -11,4 +11,4 @@ IP Calculator
 
 
 ##Validator:
--mkd1994,Watasama,kiliev
+-mkd1994,Watasama,kiliev,????(Kris)
