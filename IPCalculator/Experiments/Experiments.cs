@@ -15,8 +15,54 @@ namespace Experiments
             Console.WriteLine(ip);
             Console.WriteLine(subnet);
 
-
+            var masks = GenerateMasks();
+            foreach (var mask in masks)
+            {
+                Console.WriteLine(mask);
+            }
         }
+        static int ChangeBitAt(int value, int position)
+        {
+            if (value > 255)
+            {
+                throw new ArgumentOutOfRangeException("ZeroBit value is more than 255.");
+            }
+            return value | (1 << position);
+        }
+
+        public static List<string> GenerateMasks()
+        {
+            var masks = new List<string>();
+
+            int value = 0;
+
+            //Generate class A masks
+            for (int i = 8 - 1; i >= 0; i--)
+            {
+                value = value | ChangeBitAt(128, i);
+                masks.Add(value.ToString() + ".0.0.0");
+            }
+            
+            //Generate class B masks
+            value = 0;
+            for (int i = 8 - 1; i >= 0; i--)
+            {
+                value = value | ChangeBitAt(128, i);
+                masks.Add("255." + value.ToString() + ".0.0");
+            }
+            
+            //Generate class C masks
+            value = 0;
+            for (int i = 8 - 1; i >= 0; i--)
+            {
+                value = value | ChangeBitAt(128, i);
+                masks.Add("255.255." + value.ToString() + ".0");
+            }
+
+
+            return masks;
+        }
+
         public static string ConvertAddressToBinary(string address)
         {
             var splitted_address = address.Split('.').ToArray();
