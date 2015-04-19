@@ -43,11 +43,20 @@
             }
             return value | (1 << position);
         }
+        public static string[] GetAddressRange(string address, string subnet)
+        {
+            string[] result = new string[2];
+
+            int ip = ExtractIp(address);
+            int mask = ExtractIp(subnet);
+            result[0] = ConvertToIp(ip & mask);
+            result[1] = ConvertToIp((ip & mask) + (~mask));
+            return result;
+        }
 
         public static List<string> GenerateMasks()
         {
             var masks = new List<string>();
-
             int value = 0;
 
             //Generate class A masks
@@ -123,16 +132,30 @@
                 if (counter < 3)
                 {
                     result.Append(".");
-                }           
+                }
                 counter++;
             }
 
             return result.ToString();
         }
 
-        public static string HostAddressRange()
+        public static int ExtractIp(String s)
         {
-            throw new NotImplementedException();
+            int h = 0;
+            string[] v = s.Split('.');
+            foreach (string t in v)
+            {
+                if (Convert.ToInt32(t) > 255)
+                {
+                    throw new FormatException();
+                }
+                h = (h << 8) + Convert.ToInt32(t);
+            }
+            return h;
+        }
+        public static string ConvertToIp(int h)
+        {
+            return ((h & 0xFF000000) >> 24) + "." + ((h & 0x00FF0000) >> 16) + "." + ((h & 0x0000FF00) >> 8) + "." + (h & 0x000000FF); ;
         }
         public static string SubnetID()
         {
