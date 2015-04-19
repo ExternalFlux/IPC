@@ -19,10 +19,13 @@
             var masks = Engine.GenerateMasks();
             foreach (var mask in masks)
             {
-                Console.WriteLine(mask);
+                //Console.WriteLine(mask);
+                Console.WriteLine(Engine.ConvertAddressToHostAndNetwork(ip, mask));
             }
-            Console.WriteLine(Engine.GetNetwork("78.90.149.55", "255.255.255.0"));
+            var network = Engine.GetNetwork("78.90.149.55", "255.255.255.0");
+            Console.WriteLine(network);
 
+            
         }
     }
 }

@@ -37,6 +37,10 @@
             {
                 throw new ArgumentOutOfRangeException("ZeroBit value is more than 255.");
             }
+            if (value < 0)
+            {
+                throw new ArgumentOutOfRangeException("ZeroBit value is less than 0."); //Never gonna happen
+            }
             return value | (1 << position);
         }
 
@@ -83,10 +87,14 @@
             }
             return String.Join(".", splitted_address);
         }
+        public static string ConvertNumberToBinary(string number)
+        {
+            return Convert.ToString(int.Parse(number), 2).PadLeft(8, '0');
+        }
 
         public static string ConvertAddressToHostAndNetwork(string address, string subnet)
         {
-            string result = String.Empty;
+            var result = new StringBuilder();
 
             /*
             Class A - 255.0.0.0
@@ -95,12 +103,31 @@
             */
 
             // Generate mask octets
-            for (int i = 0; i < 8; i++)
-            {
+            var subnetOctets = subnet.Split('.');
 
+            int counter = 0;
+            foreach (var octet in subnetOctets)
+            {
+                string currentOctet = ConvertNumberToBinary(octet);
+                foreach (var item in currentOctet)
+                {
+                    if (int.Parse(item.ToString()) > 0)
+                    {
+                        result.Append("n");
+                    }
+                    else
+                    {
+                        result.Append("h");
+                    }
+                }
+                if (counter < 3)
+                {
+                    result.Append(".");
+                }           
+                counter++;
             }
 
-            return result;
+            return result.ToString();
         }
 
         public static string HostAddressRange()
