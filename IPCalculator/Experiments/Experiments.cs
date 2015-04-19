@@ -1,19 +1,22 @@
-﻿namespace IPCalculator.Engine
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Experiments
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
-    public static class Engine
+    class Experiments
     {
+        static void Main(string[] args)
+        {
+            var ip = ConvertAddressToBinary("78.90.149.55");
+            var subnet = ConvertAddressToBinary("255.255.255.0");
+            Console.WriteLine(ip);
+            Console.WriteLine(subnet);
 
 
-        // Sample calculator : http://www.subnet-calculator.com/subnet.php?net_class=B
-        // Sample 2 : http://www.gestioip.net/cgi-bin/subnet_calculator.cgi
-
-        // Todo Implement
+        }
         public static string ConvertAddressToBinary(string address)
         {
             var splitted_address = address.Split('.').ToArray();
@@ -39,30 +42,11 @@
             // Generate mask octets
             for (int i = 0; i < 8; i++)
             {
-                
+
             }
 
 
             return result;
-        }
-
-        public static string HostAddressRange()
-        {
-            throw new NotImplementedException();
-        }
-        public static string SubnetID()
-        {
-            throw new NotImplementedException();
-        }
-
-        public static string BroadcastAddress()
-        {
-            throw new NotImplementedException();
-        }
-
-        public static string SubnetBitmap()
-        {
-            throw new NotImplementedException();
         }
     }
 }
