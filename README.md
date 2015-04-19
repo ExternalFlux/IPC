@@ -11,6 +11,4 @@ IP Calculator
 
 
 ##Validator:
--mkd1994,Watasama,kiliev,????(Kris) test
-
-test
+test -mkd1994,Watasama,kiliev,????(Kris) more
