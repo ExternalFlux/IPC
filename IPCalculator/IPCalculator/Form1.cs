@@ -31,5 +31,11 @@
         {
 
         }
+
+        private void label_binaryID_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
