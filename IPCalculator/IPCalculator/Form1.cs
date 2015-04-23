@@ -24,7 +24,7 @@
         {        
             string address = txt_ip_input.Text;
 
-            lbl_ip_adddres_result.Text = Engine.Engine.ConvertAddressToBinary(address);
+            //lbl_ip_adddres_result.Text = Engine.Engine.ConvertAddressToBinary(address);
         }
 
         private void label13_Click(object sender, EventArgs e)

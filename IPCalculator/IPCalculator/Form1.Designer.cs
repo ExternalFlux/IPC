@@ -22,6 +22,7 @@
 
         #region Windows Form Designer generated code
 
+        //WHY WNOT THIS OWK
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
@@ -206,7 +207,6 @@
             this.textBox2.Size = new System.Drawing.Size(162, 20);
             this.textBox2.TabIndex = 24;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.Visible = false;
             // 
             // textBox3
             // 
@@ -217,7 +217,6 @@
             this.textBox3.Size = new System.Drawing.Size(162, 20);
             this.textBox3.TabIndex = 25;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox3.Visible = false;
             // 
             // textBox4
             // 
@@ -228,7 +227,6 @@
             this.textBox4.Size = new System.Drawing.Size(162, 20);
             this.textBox4.TabIndex = 26;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox4.Visible = false;
             // 
             // textBox5
             // 
@@ -239,7 +237,6 @@
             this.textBox5.Size = new System.Drawing.Size(162, 20);
             this.textBox5.TabIndex = 27;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox5.Visible = false;
             // 
             // textBox6
             // 
@@ -260,7 +257,6 @@
             this.textBox7.Size = new System.Drawing.Size(141, 20);
             this.textBox7.TabIndex = 29;
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox7.Visible = false;
             // 
             // textBox8
             // 
@@ -271,7 +267,6 @@
             this.textBox8.Size = new System.Drawing.Size(141, 20);
             this.textBox8.TabIndex = 30;
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox8.Visible = false;
             // 
             // textBox9
             // 
@@ -282,7 +277,6 @@
             this.textBox9.Size = new System.Drawing.Size(327, 20);
             this.textBox9.TabIndex = 31;
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox9.Visible = false;
             // 
             // textBox10
             // 
@@ -293,7 +287,6 @@
             this.textBox10.Size = new System.Drawing.Size(141, 20);
             this.textBox10.TabIndex = 32;
             this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox10.Visible = false;
             // 
             // textBox11
             // 
@@ -304,7 +297,6 @@
             this.textBox11.Size = new System.Drawing.Size(327, 20);
             this.textBox11.TabIndex = 33;
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox11.Visible = false;
             // 
             // btn_clear
             // 
