@@ -1,4 +1,4 @@
-﻿namespace IPCalculator.Validator
+﻿namespace IPC.Validator
 {
     using System;
     using System.Collections.Generic;

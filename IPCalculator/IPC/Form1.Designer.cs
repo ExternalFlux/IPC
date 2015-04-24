@@ -1,4 +1,4 @@
-﻿namespace IPCalculator
+﻿namespace IPC
 {
     partial class Form1
     {
@@ -29,7 +29,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_ip_submit = new System.Windows.Forms.Button();
             this.txt_ip_input = new System.Windows.Forms.TextBox();
             this.txt_subnet = new System.Windows.Forms.TextBox();
@@ -367,9 +366,9 @@
             this.Controls.Add(this.txt_ip_input);
             this.Controls.Add(this.btn_ip_submit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

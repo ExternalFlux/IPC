@@ -1,4 +1,4 @@
-﻿namespace IPCalculator.Engine
+﻿namespace IPC.Engine
 {
     using System;
     using System.Collections.Generic;
