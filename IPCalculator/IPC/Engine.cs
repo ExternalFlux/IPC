@@ -174,5 +174,22 @@
             }
             return value | (1 << position);
         }
+
+        public static void InvertArray(byte[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = (byte)(255 - array[i]);
+            }
+        }
+        public static int PowerOf(int number, int power)
+        {
+            int result = 1;
+            for (int i = 1; i <= power; i++)
+            {
+                result *= number;
+            }
+            return result;
+        }
     }
 }
