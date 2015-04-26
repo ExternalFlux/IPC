@@ -1,8 +1,9 @@
-# IPC
-IP Calculator
+# IPC - Internet Protocol Calculator
+Simple IP calculator now supports only v4. The next updates will support v6.
 
-#Tasks:
 ##UI:
+Simple and easy to use UI.
+
 ![alt tag](http://i.imgur.com/CV0UJo3.png)
 
 ##Engine:
