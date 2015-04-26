@@ -71,7 +71,10 @@ uint octet = ReturnFirtsOctet("78.90.149.55") // 78
 ```
 
 #Other Sources :
-##IPAddressExtensions - http://blogs.msdn.com/b/knom/archive/2008/12/31/ip-address-calculations-with-c-subnetmasks-networks.aspx
-###IPAddress GetBroadcastAddress(this IPAddress address, IPAddress subnetMask)
-###IPAddress GetNetworkAddress(this IPAddress address, IPAddress subnetMask)
-###bool IsInSameSubnet(this IPAddress address2, IPAddress address, IPAddress subnetMask)
+IPAddressExtensions - http://blogs.msdn.com/b/knom/archive/2008/12/31/ip-address-calculations-with-c-subnetmasks-networks.aspx
+###Used in this project:
+```C#
+IPAddress GetBroadcastAddress(this IPAddress address, IPAddress subnetMask)
+IPAddress GetNetworkAddress(this IPAddress address, IPAddress subnetMask)
+bool IsInSameSubnet(this IPAddress address2, IPAddress address, IPAddress subnetMask)
+```
