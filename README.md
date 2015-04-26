@@ -45,17 +45,33 @@ foreach (var mask in masks)
 */
 ```
 
-###
+
+###string isIPLocal(IPAddress ipaddress)
 ```C#
-
+string isLocal1 =  isIPLocal("78.90.149.55");
+string isLocal2 =  isIPLocal("10.90.149.55");
+Console.WriteLine('isLocal1'); // Public
+Console.WriteLine('isLocal2'); // Private
 ```
-###
+
+#SubnetMask
+###string ReturnSubnetmask(String ipaddress)
 ```C#
-
+string mask =  ReturnSubnetmask("78.90.149.55") // 255.0.0.0
 ```
 
-###
+###string ReturnClass(String ipaddress)
 ```C#
-
+string class =  ReturnClass("78.90.149.55") // A
 ```
-##Validator:
+
+###uint ReturnFirtsOctet(string ipAddress)
+```C#
+uint octet = ReturnFirtsOctet("78.90.149.55") // 78
+```
+
+#Other Sources :
+##IPAddressExtensions - http://blogs.msdn.com/b/knom/archive/2008/12/31/ip-address-calculations-with-c-subnetmasks-networks.aspx
+###IPAddress GetBroadcastAddress(this IPAddress address, IPAddress subnetMask)
+###IPAddress GetNetworkAddress(this IPAddress address, IPAddress subnetMask)
+###bool IsInSameSubnet(this IPAddress address2, IPAddress address, IPAddress subnetMask)
